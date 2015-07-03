@@ -4,7 +4,7 @@ jQuery expandable box plugin
 
 ## Features
 
-Cut and expand a box with content in various ease and awesome ways.
+Cut and expand a box with content in various easy and awesome ways.
 
 ## Requirements
 
@@ -13,22 +13,37 @@ Cut and expand a box with content in various ease and awesome ways.
 ## Example
 
 ```html
-<ul class="box">
+<div class="box">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vel placeat explicabo in porro. Amet laborum nam, eius ut. Odio veritatis nostrum totam molestiae itaque vel similique, perferendis a consequatur!
-</ul>
+</div>
+<div class="othercontent">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vel placeat explicabo in porro. Amet laborum nam, eius ut. Odio veritatis nostrum totam molestiae itaque vel similique, perferendis a consequatur!
+</div>
 
 <script src="src/iptools-jquery-expandable-box.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     $('.box').iptExpandableBox({
-      cutHeight: 200,
-      cutWidth: 'none',
-      expandWidth: false
-      expandHeight: 'auto'
+      cutHeight: '100px',
+      expandHeightTo: 'auto',
+      expandWidthTo: '100%',
+      expandEvent: 'mouseenter',
+      expandEventTarget: null,
+      shrinkEvent: 'mouseleave',
+      shrinkEventTarget: null,
+      animationSpeed: 1000
     });
   });
 </script>
 ```
+
+## Options
+
+Name             | Default                    | Type    | Description
+:----------------|:---------------------------|:--------|:-----------
+cutHeight        | `100px`                    | string  | Height at which the container should be cut initially, px or % value
+expandHeightTo   | `auto`                     | string  | Height to which the countainer should be expanded, px, % or 'auto'
+animationSpeed   | `500`                      | int     | Animation speed in miliseconds.                         
 
 ## Contributions
 
