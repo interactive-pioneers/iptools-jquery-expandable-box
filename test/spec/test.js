@@ -5,7 +5,10 @@
 
     var pluginName = 'plugin_iptExpandableBox';
     var config = {
-      cutHeight: '111px'
+      cutHeight: '111px',
+      expandHeightTo: '200px',
+      expandWidthTo: '300px',
+      expandEvent: 'click'
     };
     var object = null;
     var $element = $('.box');
@@ -22,6 +25,39 @@
 
       it('expected to set number of list items to ' + config.cutHeight, function() {
         return expect(object.data(pluginName).settings.cutHeight).to.equal(config.cutHeight);
+      });
+
+    });
+
+    describe('expand', function() {
+
+      beforeEach(function() {
+        object = $element.iptExpandableBox(config);
+      });
+
+      /*
+      it('expected to expand the box width to ' + config.expandWidthTo, function() {
+        $element.trigger('click');
+        return expect($element.css('width')).to.equal(config.expandWidthTo);
+      });
+
+      it('expected to expand the box height to ' + config.expandHeightTo, function() {
+        $element.trigger('click');
+        return expect($element.css('height')).to.equal(config.expandHeightTo);
+      });
+      */
+
+    });
+
+    describe('destroy', function() {
+
+      beforeEach(function() {
+        object = $element.iptExpandableBox(config);
+      });
+
+      it('expected to remove data', function() {
+        object.data(pluginName).destroy();
+        return expect(object.data(pluginName)).to.not.be.ok;
       });
 
     });
