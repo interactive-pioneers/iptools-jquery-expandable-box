@@ -16,7 +16,8 @@
     expandEvent: 'mouseenter',
     expandEventTarget: null,
     shrinkEvent: 'mouseleave',
-    shrinkEventTarget: null
+    shrinkEventTarget: null,
+    animationSpeed: 1000
   };
 
   /**
