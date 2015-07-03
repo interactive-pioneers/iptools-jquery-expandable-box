@@ -5,9 +5,10 @@
 
     var pluginName = 'plugin_iptExpandableBox';
     var config = {
-      cutSize: 200
+      cutHeight: '111px'
     };
     var object = null;
+    var $element = $('.box');
 
     describe('init', function() {
 
@@ -19,8 +20,8 @@
         return expect(object).to.be.an.object;
       });
 
-      it('expected to set number of list items to ' + config.cutSize, function() {
-        return expect(object.data(pluginName).settings.cutSize).to.equal(config.cutSize);
+      it('expected to set number of list items to ' + config.cutHeight, function() {
+        return expect(object.data(pluginName).settings.cutHeight).to.equal(config.cutHeight);
       });
 
     });
