@@ -41,9 +41,9 @@ Cut and expand a box with content in various easy and awesome ways.
 
 Name              | Default                    | Type    | Description
 :-----------------|:---------------------------|:--------|:-----------
-cutHeight         | `100px`                    | string  | Height at which the container should be cut initially, px or % (relative to parent) 
-expandHeightTo    | `auto`                     | string  | Height, the countainer should be expanded to, px, % (relative to cutHeight) or 'auto'
-expandWidthTo     | `100%`                     | string  | Width, the countainer should be expanded to, px, % (relative to parent)
+cutHeight         | `100px`                    | string  | Height at which the container should be cut initially, in px or % (relative to parent) 
+expandHeightTo    | `auto`                     | string  | Height the countainer should be expanded to, in px, % (relative to cutHeight) or 'auto'
+expandWidthTo     | `100%`                     | string  | Width the countainer should be expanded to, in px, % (relative to parent)
 expandEvent       | `mouseenter`               | string  | Event that triggers expansion.
 expandEventTrigger| `null`                     | string  | Event target, null = this
 shrinkEvent       | `mouseleave`               | string  | Event that triggers collapsing to initial size.
