@@ -5,6 +5,7 @@
 
     var pluginName = 'plugin_iptExpandableBox';
     var config = {
+      animationSpeed: 500,
       cutHeight: '111px',
       expandHeightTo: '200px',
       expandWidthTo: '300px',
@@ -31,21 +32,21 @@
 
     describe('expand', function() {
 
-      beforeEach(function() {
+      beforeEach(function(done) {
+        $element.trigger('click');
         object = $element.iptExpandableBox(config);
+        setTimeout(function() {
+          done();
+        }, config.animationSpeed + 50);
       });
 
-      /*
       it('expected to expand the box width to ' + config.expandWidthTo, function() {
-        $element.trigger('click');
         return expect($element.css('width')).to.equal(config.expandWidthTo);
       });
 
       it('expected to expand the box height to ' + config.expandHeightTo, function() {
-        $element.trigger('click');
         return expect($element.css('height')).to.equal(config.expandHeightTo);
       });
-      */
 
     });
 
