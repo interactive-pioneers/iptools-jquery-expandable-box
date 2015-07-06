@@ -68,8 +68,6 @@
       var self = event.data;
 
       var height = self.settings.expandHeightTo;
-
-      console.log(self.settings.expandWidthTo);
       if (height === 'auto') {
         var $clone = self.$element
           .clone()
