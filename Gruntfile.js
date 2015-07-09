@@ -25,15 +25,17 @@ module.exports = function(grunt) {
     watch: {
       qa: {
         files: [
-          '<%= yeoman.src %>/iptools-jquery-expandable-box.js',
-          'test/spec/test.js'
+          '<%= yeoman.src %>/iptools-jquery-expandable-list.js',
+          '<%= yeoman.test %>/index.html',
+          '<%= yeoman.test %>/spec/test.js'
         ],
         tasks: ['concurrent:qa']
       },
       bdd: {
         files: [
-          '<%= yeoman.src %>/iptools-jquery-expandable-box.js',
-          'test/spec/test.js'
+          '<%= yeoman.src %>/iptools-jquery-expandable-list.js',
+          '<%= yeoman.test %>/index.html',
+          '<%= yeoman.test %>/spec/test.js'
         ],
         tasks: ['test']
       }
