@@ -17,7 +17,7 @@
     expandEventTarget: null,
     shrinkEvent: 'mouseleave',
     shrinkEventTarget: null,
-    animationSpeed: 1000
+    animationDuration: 1000
   };
 
   /**
@@ -85,7 +85,7 @@
           width: self.settings.expandWidthTo,
           height: height
         },
-        self.settings.animationSpeed
+        self.settings.animationDuration
       );
 
     },
@@ -102,7 +102,7 @@
           width: '100%',
           height: self.settings.cutHeight
         },
-        self.settings.animationSpeed
+        self.settings.animationDuration
       );
 
     },
