@@ -77,7 +77,7 @@
             visibility: 'hidden'
           })
           .insertBefore(self.$element);
-        height = $clone.height();
+        height = $clone.css('height');
         $clone.remove();
       }
 
