@@ -31,7 +31,7 @@ Cut and expand a box with content in various easy and awesome ways.
       expandEventTarget: null,
       shrinkEvent: 'mouseleave',
       shrinkEventTarget: null,
-      animationSpeed: 1000
+      animationDuration: 1000
     });
   });
 </script>
@@ -48,7 +48,8 @@ expandEvent       | `mouseenter`               | string  | Event that triggers e
 expandEventTrigger| `null`                     | string  | Event target, null = this
 shrinkEvent       | `mouseleave`               | string  | Event that triggers collapsing to initial size.
 shrinkEventTrigger| `null`                     | string  | Event target, null = this
-animationSpeed    | `500`                      | int     | Animation speed in miliseconds.                         
+expandedClass     | `expanded`                 | string  | Class added to expanded element
+animationDuration | `500`                      | int     | Animation duration in miliseconds.                         
 
 ## Contributions
 
