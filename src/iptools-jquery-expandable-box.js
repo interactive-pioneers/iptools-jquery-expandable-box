@@ -17,6 +17,7 @@
     expandEventTarget: null,
     shrinkEvent: 'mouseleave',
     shrinkEventTarget: null,
+    expandedClass: 'expanded',
     animationDuration: 1000
   };
 
@@ -81,12 +82,13 @@
         $clone.remove();
       }
 
-      self.$element.animate({
-          width: self.settings.expandWidthTo,
-          height: height
-        },
-        self.settings.animationDuration
-      );
+      self.$element
+        .animate({
+            width: self.settings.expandWidthTo,
+            height: height
+          },
+          self.settings.animationDuration
+        ).addClass(self.settings.expandedClass);
 
     },
 
@@ -98,12 +100,13 @@
 
       var self = event.data;
 
-      self.$element.animate({
-          width: '100%',
-          height: self.settings.cutHeight
-        },
-        self.settings.animationDuration
-      );
+      self.$element
+        .animate({
+            width: '100%',
+            height: self.settings.cutHeight
+          },
+          self.settings.animationDuration
+        ).removeClass(self.settings.expandedClass);
 
     },
 
