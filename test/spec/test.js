@@ -5,7 +5,7 @@
 
     var pluginName = 'plugin_iptExpandableBox';
     var config = {
-      animationSpeed: 500,
+      animationDuration: 500,
       cutHeight: '111px',
       expandHeightTo: '200px',
       expandWidthTo: '300px',
@@ -37,7 +37,7 @@
         object = $element.iptExpandableBox(config);
         setTimeout(function() {
           done();
-        }, config.animationSpeed + 50);
+        }, config.animationDuration + 50);
       });
 
       it('expected to expand the box width to ' + config.expandWidthTo, function() {
