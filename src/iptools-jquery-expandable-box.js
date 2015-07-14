@@ -83,6 +83,7 @@
       }
 
       self.$element
+        .stop()
         .animate({
             width: self.settings.expandWidthTo,
             height: height
@@ -101,6 +102,7 @@
       var self = event.data;
 
       self.$element
+        .stop()
         .animate({
             width: '100%',
             height: self.settings.cutHeight
