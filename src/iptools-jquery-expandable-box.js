@@ -18,6 +18,7 @@
     shrinkEvent: 'mouseleave',
     shrinkEventTarget: null,
     expandedClass: 'expanded',
+    initializedClass: 'initialized',
     animationDuration: 1000
   };
 
@@ -56,7 +57,9 @@
         .wrap($('<div/>', {
           style: 'position: relative; height: ' + this.$element.height() + 'px;'
         }));
+
       this.addEventListeners();
+      this.$element.addClass(this.settings.initializedClass);
 
     },
 
