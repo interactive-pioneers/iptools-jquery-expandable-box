@@ -49,7 +49,8 @@ expandEventTrigger| `null`                     | string  | Event target, null = 
 shrinkEvent       | `mouseleave`               | string  | Event that triggers collapsing to initial size.
 shrinkEventTrigger| `null`                     | string  | Event target, null = this
 expandedClass     | `expanded`                 | string  | Class added to expanded element
-animationDuration | `500`                      | int     | Animation duration in miliseconds.                         
+initializedClass  | `initialized`              | string  | Class added to element after plugin initialization
+animationDuration | `1000`                     | int     | Animation duration in miliseconds.                         
 
 ## Contributions
 
