@@ -7,19 +7,18 @@
 </head>
 <body>
   <div id="mocha"></div>
-  
+
   <div style="width: 200px;">
     <div class="box"></div>
   </div>
 
-  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="lib/mocha/mocha.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script src="../node_modules/chai/chai.js"></script>
   <script>mocha.setup('bdd');</script>
-  <script src="lib/chai.js"></script>
   <script>var expect = chai.expect;</script>
   <script src="spec/test.js"></script>
   <script src="../src/iptools-jquery-expandable-box.js"></script>
-  <script>mocha.setup({globals: ['$']});</script>
   <script>
     if (navigator.userAgent.indexOf('PhantomJS') < 0) {
       mocha.run();
