@@ -1,6 +1,6 @@
 # iptools-jquery-expandable-box [![Build Status](http://img.shields.io/travis/interactive-pioneers/iptools-jquery-expandable-box.svg)](https://travis-ci.org/interactive-pioneers/iptools-jquery-expandable-box)
 
-jQuery expandable box plugin
+jQuery plugin to cut and expand a box with content in various awesome ways.
 
 ## Features
 
@@ -41,7 +41,7 @@ Cut and expand a box with content in various easy and awesome ways.
 
 Name              | Default                    | Type    | Description
 :-----------------|:---------------------------|:--------|:-----------
-cutHeight         | `100px`                    | string  | Height at which the container should be cut initially, in px or % (relative to parent) 
+cutHeight         | `100px`                    | string  | Height at which the container should be cut initially, in px or % (relative to parent)
 expandHeightTo    | `auto`                     | string  | Height the countainer should be expanded to, in px, % (relative to cutHeight) or 'auto'
 expandWidthTo     | `100%`                     | string  | Width the countainer should be expanded to, in px, % (relative to parent)
 expandEvent       | `mouseenter`               | string  | Event that triggers expansion.
@@ -50,7 +50,7 @@ shrinkEvent       | `mouseleave`               | string  | Event that triggers c
 shrinkEventTrigger| `null`                     | string  | Event target, null = this
 expandedClass     | `expanded`                 | string  | Class added to expanded element
 initializedClass  | `initialized`              | string  | Class added to element after plugin initialization
-animationDuration | `1000`                     | int     | Animation duration in miliseconds.                         
+animationDuration | `1000`                     | int     | Animation duration in miliseconds.
 
 ## Contributions
 
