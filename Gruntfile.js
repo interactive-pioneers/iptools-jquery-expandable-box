@@ -55,7 +55,7 @@ module.exports = function(grunt) {
         options: {
           run: true
         },
-        src: ['test/index.html']
+        src: ['<%= yeoman.test %>/index.html']
       }
     },
     concurrent: {
