@@ -50,5 +50,11 @@
     "list",
     "lists",
     "jquery"
+  ],
+  "files": [
+    "*.md",
+    "LICENSE",
+    "src",
+    "dist"
   ]
 }
