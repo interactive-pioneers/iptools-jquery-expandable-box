@@ -2,7 +2,6 @@
   "name": "iptools-jquery-expandable-box",
   "description": "Cut and expand a box with content in various awesome ways.",
   "main": "dist/iptools-jquery-expandable-box.min.js",
-  "version": "0.0.2",
   "license": "GPL-3.0",
   "ignore": [
     ".git*",
