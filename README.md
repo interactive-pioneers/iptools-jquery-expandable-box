@@ -1,6 +1,6 @@
 # iptools-jquery-expandable-box [![Build Status](http://img.shields.io/travis/interactive-pioneers/iptools-jquery-expandable-box.svg)](https://travis-ci.org/interactive-pioneers/iptools-jquery-expandable-box)
 
-jQuery expandable box plugin
+jQuery plugin to cut and expand a box with content in various awesome ways.
 
 ## Features
 
@@ -41,7 +41,7 @@ Cut and expand a box with content in various easy and awesome ways.
 
 Name              | Default                    | Type    | Description
 :-----------------|:---------------------------|:--------|:-----------
-cutHeight         | `100px`                    | string  | Height at which the container should be cut initially, in px or % (relative to parent) 
+cutHeight         | `100px`                    | string  | Height at which the container should be cut initially, in px or % (relative to parent)
 expandHeightTo    | `auto`                     | string  | Height the countainer should be expanded to, in px, % (relative to cutHeight) or 'auto'
 expandWidthTo     | `100%`                     | string  | Width the countainer should be expanded to, in px, % (relative to parent)
 expandEvent       | `mouseenter`               | string  | Event that triggers expansion.
@@ -50,32 +50,7 @@ shrinkEvent       | `mouseleave`               | string  | Event that triggers c
 shrinkEventTrigger| `null`                     | string  | Event target, null = this
 expandedClass     | `expanded`                 | string  | Class added to expanded element
 initializedClass  | `initialized`              | string  | Class added to element after plugin initialization
-animationDuration | `1000`                     | int     | Animation duration in miliseconds.                         
-
-## Contributions
-
-### Bug reports, suggestions
-
-- File all your issues, feature requests [here](https://github.com/interactive-pioneers/iptools-jquery-expandable-box/issues)
-- If filing a bug report, follow the convention of _Steps to reproduce_ / _What happens?_ / _What should happen?_
-- __If you're a developer, write a failing test instead of a bug report__ and send a Pull Request
-
-### Code
-
-1. Fork it ( https://github.com/[my-github-username]/iptools-jquery-expandable-box/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Develop your feature by concepts of [TDD](http://en.wikipedia.org/wiki/Test-driven_development), see [Tips](#tips)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-### Tips
-
-Following tasks are there to help with development:
-
-- `grunt watch:bdd` listens to tests and source, reruns tests
-- `grunt qa` run QA task that includes tests and JSHint
-- `grunt build` minify source to dist/
+animationDuration | `1000`                     | int     | Animation duration in miliseconds.
 
 ## Licence
-Copyright © 2015 Interactive Pioneers GmbH. Licenced under [GPLv3](LICENSE).
+Copyright © 2015-2017 Interactive Pioneers GmbH. Licenced under [GPL-3](LICENSE).
