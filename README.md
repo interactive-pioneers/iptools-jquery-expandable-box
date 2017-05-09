@@ -8,7 +8,7 @@ Cut and expand a box with content in various easy and awesome ways.
 
 ## Requirements
 
-- jQuery 1.11.3 or greater
+- jQuery >=1.11.3 <4.0.0
 
 ## Example
 
